@@ -1,0 +1,42 @@
+@media screen and (max-width: 825px) {
+  .App {
+    display: grid;
+    grid-template-rows: 1fr; /* 1 fraction of available height */
+    grid-template-columns: 1fr; /* 1 fraction of available width */
+    height: 100vh;
+    width: 100vw; /* 100% of the viewport height */
+  }
+  .about__container {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__face {
+      border-radius: 50px;
+      width: 240px;
+      height: 350px;
+    }
+
+    &__header {
+      padding-top: 25px;
+    }
+  }
+
+  .intro {
+    &__picture {
+      display: none;
+    }
+    &__container {
+      width: 100%;
+    }
+    &__name {
+      display: flex;
+      justify-content: center;
+    }
+    &__position {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+  }
+}
