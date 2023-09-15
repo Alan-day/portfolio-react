@@ -1,10 +1,10 @@
 @media screen and (max-width: 825px) {
   .App {
+    margin: 20px;
     display: grid;
-    grid-template-rows: 1fr; /* 1 fraction of available height */
-    grid-template-columns: 1fr; /* 1 fraction of available width */
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
     height: 100vh;
-    width: 100vw; /* 100% of the viewport height */
   }
   .about__container {
     margin: 0px 20px;
@@ -37,6 +37,113 @@
       display: flex;
       justify-content: center;
       margin-bottom: 40px;
+    }
+  }
+
+  .skills__container {
+    margin: 20px;
+  }
+
+  .skills-list {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "picture1 picture2 picture3 "
+      "text1 text2 text3 "
+      "picture4 picture5 picture6 "
+      "text4 text5 text6 "
+      "picture7 picture8 picture9"
+      "text7 text8 text9";
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 100px 1fr 100px 1fr 100px;
+    justify-items: center;
+    &--picture1 {
+      grid-area: picture1;
+      padding: 5px;
+    }
+    &--picture2 {
+      grid-area: picture2;
+      padding: 5px;
+    }
+    &--picture3 {
+      grid-area: picture3;
+      padding: 5px;
+    }
+    &--picture4 {
+      grid-area: picture4;
+      padding: 5px;
+    }
+    &--picture5 {
+      grid-area: picture5;
+      padding: 5px;
+    }
+    &--picture6 {
+      grid-area: picture6;
+      padding: 5px;
+    }
+    &--picture7 {
+      grid-area: picture7;
+      padding: 5px;
+    }
+    &--picture8 {
+      grid-area: picture8;
+      padding: 5px;
+    }
+    &--picture9 {
+      grid-area: picture9;
+      padding: 5px;
+    }
+    /*----------------------------------------------------*/
+    &--item1 {
+      grid-area: text1;
+      align-self: self-start;
+    }
+    &--item2 {
+      grid-area: text2;
+      align-self: self-start;
+    }
+    &--item3 {
+      grid-area: text3;
+      align-self: self-start;
+    }
+    &--item4 {
+      align-self: self-start;
+      grid-area: text4;
+    }
+    &--item5 {
+      align-self: self-start;
+      grid-area: text5;
+    }
+    &--item6 {
+      align-self: self-start;
+      grid-area: text6;
+    }
+    &--item7 {
+      align-self: self-start;
+      grid-area: text7;
+    }
+    &--item8 {
+      align-self: self-start;
+      grid-area: text8;
+    }
+    &--item9 {
+      align-self: self-start;
+      grid-area: text9;
+    }
+  }
+  .skills__list--picture,
+  .skills__list--item {
+    /* Adjust the styling for your images and text elements */
+    width: 100%;
+    text-align: center; /* Center align the text */
+  }
+
+  .research {
+    &__image {
+      width: 80vw;
+      display: flex;
+      justify-content: center;
     }
   }
 }
