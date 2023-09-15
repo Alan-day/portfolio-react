@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@500&display=swap");
+
+$primary-font: "Montserrat", "sans serif";
+$secondary-font: "Open Sans", "Arial";
+$button-colour: white;
+* {
+  box-sizing: border-box;
+}
 @media screen and (max-width: 825px) {
   .App {
     margin: 20px;
@@ -134,16 +142,99 @@
   }
   .skills__list--picture,
   .skills__list--item {
-    /* Adjust the styling for your images and text elements */
     width: 100%;
-    text-align: center; /* Center align the text */
+    text-align: center;
   }
 
   .research {
     &__image {
-      width: 80vw;
+      margin: 10px 20px;
+      display: flex;
+      justify-content: center;
+      height: 200px;
+      max-height: 100%;
+      width: auto;
+    }
+
+    &__header {
       display: flex;
       justify-content: center;
     }
+  }
+}
+
+@media screen and (min-width: 826px) {
+  .intro {
+    margin: 10px 40px;
+    display: flex;
+    align-items: center;
+    &__container {
+      font-size: 32px;
+    }
+  }
+  .App {
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .about__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "picture heading"
+      "picture paragraph1"
+      "picture paragraph2";
+    &__face {
+      padding-right: 50px;
+      justify-self: center;
+      grid-area: picture;
+
+      padding-left: 20px;
+      border-radius: 10px;
+      height: 600px;
+      border-radius: 10px;
+    }
+
+    &__paragraph1 {
+      grid-area: paragraph1;
+      font-family: $secondary-font;
+    }
+    &__paragraph2 {
+      grid-area: paragraph2;
+      font-family: $secondary-font;
+    }
+    &__header {
+      grid-area: heading;
+      align-self: center;
+      justify-self: start;
+      font-family: $primary-font;
+      font-size: 32px;
+    }
+  }
+  .skills__container {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .skills-list {
+    margin-top: 50px;
+    width: 80%;
+    justify-self: center;
+    width: 100%;
+    padding: 0 10vh;
+    display: grid;
+    grid-template-areas:
+      "picture1 picture2 picture3 picture4 picture5 picture6 picture7 picture8 picture9"
+      "text1 text2 text3 text4 text5 text6 text7 text8 text9";
+    font-family: $secondary-font;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+    justify-items: center;
   }
 }

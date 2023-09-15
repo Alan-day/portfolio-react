@@ -68,7 +68,7 @@ function App() {
         </p>
       </div>
 
-      <div className="technical-skills">
+     
         <div class="skills-list">
           <img class="skills-list--picture1" src={html} />
           <img class="skills-list--picture2" src={css} />
@@ -90,7 +90,7 @@ function App() {
           <p class="skills-list--item8">BEM</p>
           <p class="skills-list--item9">SASS</p>
         </div>
-      </div>
+      
 
       <ProjectTileList />
 
