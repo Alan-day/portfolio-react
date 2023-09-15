@@ -1,17 +1,19 @@
 import "./App.scss";
 
-import computer_lad from "./images/computer_lad.svg";
-import alan from "./images/alan_picture.jpg";
-import html from "./images/Vector(5).svg";
-import css from "./images/Vector.svg";
-import js from "./images/Vector(9).svg";
-import git from "./images/Vector(1).svg";
-import react from "./images/Vector(2).svg";
-import spring from "./images/Vector(3).svg";
-import java from "./images/Vector(4).svg";
-import bem from "./images/Vector(8).svg";
-import sass from "./images/Vector(10).svg";
-import iot from "./images/iot-devices_cover.webp";
+import computer_lad from "./Resources/images/computer_lad.svg";
+import alan from "./Resources/images/alan_picture.jpg";
+import html from "./Resources/images/Vector(5).svg";
+import css from "./Resources/images/Vector.svg";
+import js from "./Resources/images/Vector(9).svg";
+import git from "./Resources/images/Vector(1).svg";
+import react from "./Resources/images/Vector(2).svg";
+import spring from "./Resources/images/Vector(3).svg";
+import java from "./Resources/images/Vector(4).svg";
+import bem from "./Resources/images/Vector(8).svg";
+import sass from "./Resources/images/Vector(10).svg";
+import iot from "./Resources/images/iot-devices_cover.webp";
+
+import ProjectTileList from "./Components/Navbar/ProjectTileList/ProjectTileList";
 
 function App() {
   return (
@@ -89,6 +91,9 @@ function App() {
           <p class="skills-list--item9">SASS</p>
         </div>
       </div>
+
+      <ProjectTileList />
+
       <section class="research" id="research">
         <h1 class="research__header">Research on IoT vulnerabilities</h1>
 
@@ -133,7 +138,6 @@ function App() {
           possible vulnerabilities.{" "}
         </p>
         <div className="research__image">
-         
           <img src={iot} />
         </div>
         <h1 class="research__header">Conclusions</h1>
