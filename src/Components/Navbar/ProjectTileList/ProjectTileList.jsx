@@ -19,7 +19,7 @@ const ProjectTileList = () => {
 
   return (
     <>
-      <div className="project-header">
+      <div className="project-header" id="projects">
         <h1>Projects</h1>
       </div>
       <div className="project-list">{tiles}</div>

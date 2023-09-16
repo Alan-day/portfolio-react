@@ -14,10 +14,13 @@ import sass from "./Resources/images/Vector(10).svg";
 import iot from "./Resources/images/iot-devices_cover.webp";
 
 import ProjectTileList from "./Components/Navbar/ProjectTileList/ProjectTileList";
+import Navbar from "./Components/Navbar/Navbar/Navbar";
+import Footer from "./Components/Navbar/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <div class="intro">
         <div class="intro__container">
           <h2 class=" intro__name">&#128075; Hey! I'm Alan </h2>
@@ -68,29 +71,27 @@ function App() {
         </p>
       </div>
 
-     
-        <div class="skills-list">
-          <img class="skills-list--picture1" src={html} />
-          <img class="skills-list--picture2" src={css} />
-          <img class="skills-list--picture3" src={js} />
-          <img class="skills-list--picture4" src={git} />
-          <img class="skills-list--picture5" src={react} />
-          <img class="skills-list--picture6" src={spring} />
-          <img class="skills-list--picture7" src={java} />
-          <img class="skills-list--picture8" src={bem} />
-          <img class="skills-list--picture9" src={sass} />
+      <div class="skills-list">
+        <img class="skills-list--picture1" src={html} />
+        <img class="skills-list--picture2" src={css} />
+        <img class="skills-list--picture3" src={js} />
+        <img class="skills-list--picture4" src={git} />
+        <img class="skills-list--picture5" src={react} />
+        <img class="skills-list--picture6" src={spring} />
+        <img class="skills-list--picture7" src={java} />
+        <img class="skills-list--picture8" src={bem} />
+        <img class="skills-list--picture9" src={sass} />
 
-          <p class="skills-list--item1">HTML5</p>
-          <p class="skills-list--item2">CSS3</p>
-          <p class="skills-list--item3">Javascript</p>
-          <p class="skills-list--item4">Git</p>
-          <p class="skills-list--item5">React</p>
-          <p class="skills-list--item6">Spring Boot</p>
-          <p class="skills-list--item7">Java</p>
-          <p class="skills-list--item8">BEM</p>
-          <p class="skills-list--item9">SASS</p>
-        </div>
-      
+        <p class="skills-list--item1">HTML5</p>
+        <p class="skills-list--item2">CSS3</p>
+        <p class="skills-list--item3">Javascript</p>
+        <p class="skills-list--item4">Git</p>
+        <p class="skills-list--item5">React</p>
+        <p class="skills-list--item6">Spring Boot</p>
+        <p class="skills-list--item7">Java</p>
+        <p class="skills-list--item8">BEM</p>
+        <p class="skills-list--item9">SASS</p>
+      </div>
 
       <ProjectTileList />
 
@@ -107,6 +108,7 @@ function App() {
           papers I decided to find few taxonomies of problems and narrow my
           examination to the network side of vulnerabilities.
         </p>
+        <br></br>
         <p class="research__paragraph">
           As an object of study, I chose the camera that was relatively popular
           on the market (one of the first items that appeared on the list of
@@ -154,17 +156,22 @@ function App() {
           highlights the urgency for legislative authorities to step in and
           establish standardized security measures for these devices. By doing
           so, we can bolster the overall security landscape and provide users
-          with a safer IoT experience. Additionally, it is crucial to inform
-          users about potential weaknesses associated with these devices,
-          empowering them to take proactive measures to safeguard their privacy
-          and data. In conclusion, continuous efforts to identify and mitigate
-          network vulnerabilities in IoT devices are essential to ensure a
-          secure and trustworthy environment. Through a collaborative approach
-          involving researchers, manufacturers, legislative bodies, and
-          end-users, we can establish a robust framework that effectively
-          safeguards the rapidly expanding IoT ecosystem.
+          with a safer IoT experience.
+          <br></br>
+          <br></br>
+          Additionally, it is crucial to inform users about potential weaknesses
+          associated with these devices, empowering them to take proactive
+          measures to safeguard their privacy and data. In conclusion,
+          continuous efforts to identify and mitigate network vulnerabilities in
+          IoT devices are essential to ensure a secure and trustworthy
+          environment. Through a collaborative approach involving researchers,
+          manufacturers, legislative bodies, and end-users, we can establish a
+          robust framework that effectively safeguards the rapidly expanding IoT
+          ecosystem.
         </p>
       </section>
+
+      <Footer />
     </div>
   );
 }

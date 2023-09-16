@@ -67,6 +67,38 @@ const anotherData = [
       "My first React project which helped me solidify concepts learnt during the first week of working in React library.",
     code_link: "https://github.com/Alan-day/ticket-tracker",
   },
+  {
+    project_picture: `${ticket}`,
+    title: "JAVA",
+    header: "Calculator (extended)",
+    description:
+      "An extended version of a calculator that applies BIDMAS and allows for quick calculations in the command line",
+    code_link: "https://github.com/Alan-day/Calculator",
+  },
+  {
+    project_picture: `${ticket}`,
+    title: "REACT",
+    header: "Crypto/Stock prices tracker",
+    description:
+      "Crypocurrency and stock market tracker. Currently the app doesn't allow for search as I used my API calls allowance and haven't renewed my subscription",
+    code_link: "https://github.com/Alan-day/crypto-tracker",
+  },
+  {
+    project_picture: `${ticket}`,
+    title: "REACT/JAVA",
+    header: "Expense tracker",
+    description:
+      "Full stack application for adding expenses and tracking spending",
+    code_link: "https://github.com/Alan-day/spending-tracker",
+  },
+  {
+    project_picture: `${ticket}`,
+    title: "JAVA",
+    header: "Car park",
+    description:
+      "Mini project that allows for finding suitable space for a car/motorbike/van and keeps track of parked cars",
+    code_link: "https://github.com/Alan-day/java-car-park",
+  },
 ];
 
 export default anotherData;
