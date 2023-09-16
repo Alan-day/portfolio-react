@@ -16,7 +16,15 @@ const ProjectTileList = () => {
     );
   });
   console.log(anotherData);
-  return <div className="project-list">{tiles}</div>;
+
+  return (
+    <>
+      <div className="project-header">
+        <h1>Projects</h1>
+      </div>
+      <div className="project-list">{tiles}</div>
+    </>
+  );
 };
 
 export default ProjectTileList;

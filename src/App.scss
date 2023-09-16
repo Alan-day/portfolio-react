@@ -50,6 +50,9 @@ $button-colour: white;
 
   .skills__container {
     margin: 20px;
+    &--header {
+      font-family: $secondary-font;
+    }
   }
 
   .skills-list {
@@ -168,8 +171,17 @@ $button-colour: white;
     margin: 10px 40px;
     display: flex;
     align-items: center;
-    &__container {
+    justify-content: center;
+    &__name {
       font-size: 32px;
+    }
+    &__position {
+      font-size: 30px;
+    }
+    &__picture {
+      display: flex;
+      align-items: end;
+      max-width: 400px;
     }
   }
   .App {
@@ -182,25 +194,25 @@ $button-colour: white;
   .about__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 100px 1fr 1fr;
     grid-template-areas:
-      "picture heading"
+      "heading heading"
       "picture paragraph1"
       "picture paragraph2";
     &__face {
       padding-right: 50px;
       justify-self: center;
+      align-self: flex-end;
       grid-area: picture;
-
       padding-left: 20px;
       border-radius: 10px;
-      height: 600px;
-      border-radius: 10px;
+      height: 400px;
     }
 
     &__paragraph1 {
       grid-area: paragraph1;
       font-family: $secondary-font;
+      align-self: self-end;
     }
     &__paragraph2 {
       grid-area: paragraph2;
@@ -209,9 +221,10 @@ $button-colour: white;
     &__header {
       grid-area: heading;
       align-self: center;
-      justify-self: start;
+      justify-self: center;
       font-family: $primary-font;
       font-size: 32px;
+      align-self: flex-end;
     }
   }
   .skills__container {
@@ -220,13 +233,16 @@ $button-colour: white;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    &--header {
+      font-family: $secondary-font;
+    }
   }
   .skills-list {
     margin-top: 50px;
-    width: 80%;
+
     justify-self: center;
     width: 100%;
-    padding: 0 10vh;
+    padding: 0 1vh;
     display: grid;
     grid-template-areas:
       "picture1 picture2 picture3 picture4 picture5 picture6 picture7 picture8 picture9"
@@ -236,5 +252,21 @@ $button-colour: white;
     grid-template-rows: 1fr 1fr;
     align-content: center;
     justify-items: center;
+  }
+
+  .research {
+    &__image {
+      margin: 10px 20px;
+      display: flex;
+      justify-content: center;
+      height: 200px;
+      max-height: 100%;
+      width: auto;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
