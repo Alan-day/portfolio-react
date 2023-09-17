@@ -8,6 +8,7 @@ const ProjectTile = ({
   preview_link,
   description,
   project_picture,
+  back_end_link,
 }) => {
   return (
     <>
@@ -21,10 +22,19 @@ const ProjectTile = ({
             <a href={code_link}>Code</a>
             <img class="element__tag" src={code_sign} />
           </button>
-          <button className="card__buttons--element2">
-            <a href={preview_link}>Preview </a>
-            <img class="element__tag" src={code_sign} />
-          </button>
+          {preview_link && (
+            <button className="card__buttons--element2">
+              <a href={preview_link}>Preview</a>
+              <img className="element__tag" src={code_sign} />
+            </button>
+          )}
+
+          {back_end_link && (
+            <button className="card__buttons--element2">
+              <a href={back_end_link}>Back-end</a>
+              <img className="element__tag" src={code_sign} />
+            </button>
+          )}
         </div>
       </div>
     </>

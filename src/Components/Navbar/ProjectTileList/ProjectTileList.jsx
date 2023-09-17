@@ -12,6 +12,7 @@ const ProjectTileList = () => {
         description={element.description}
         code_link={element.code_link}
         preview_link={element.preview_link}
+        back_end_link={element.back_end_link}
       />
     );
   });

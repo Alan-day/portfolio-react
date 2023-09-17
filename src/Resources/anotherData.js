@@ -5,6 +5,10 @@ import drinkVoyage from "./images/drink-voyage.png";
 import weather from "./images/weather-app.png";
 import hangman from "./images/hanged_bro.png";
 import ticket from "./images/ticket_tracker.png";
+import carPark from "./images/Car-park.jpg";
+import stock from "./images/crypto-stock.png";
+import calculatorExtended from "./images/calculator.png";
+import spending from "./images/expense-tracker.png";
 
 const anotherData = [
   {
@@ -35,12 +39,12 @@ const anotherData = [
   },
   {
     project_picture: `${drinkVoyage}`,
-    title: "REACT/Spring/MySQL",
+    title: "REACT / Spring / MySQL",
     header: "Drink voyage",
     description:
       "My first full-stack project that shows various alcohol cards from Europe (card consists of name, type, country of origin and a brief description of the alcohol). User can browse, filter, create and delete alcohol cards. I applied Repository-Service-Controller model in Spring Boot communicating with MySQL database.",
     code_link: "https://github.com/Alan-day/DrinkVoyage-frontEnd",
-    preview_link: "https://github.com/Alan-day/DrinkVoyage-SpringBackEnd",
+    back_end_link: "https://github.com/Alan-day/DrinkVoyage-SpringBackEnd",
   },
   {
     project_picture: `${weather}`,
@@ -68,7 +72,7 @@ const anotherData = [
     code_link: "https://github.com/Alan-day/ticket-tracker",
   },
   {
-    project_picture: `${ticket}`,
+    project_picture: `${calculatorExtended}`,
     title: "JAVA",
     header: "Calculator (extended)",
     description:
@@ -76,7 +80,7 @@ const anotherData = [
     code_link: "https://github.com/Alan-day/Calculator",
   },
   {
-    project_picture: `${ticket}`,
+    project_picture: `${stock}`,
     title: "REACT",
     header: "Crypto/Stock prices tracker",
     description:
@@ -84,15 +88,16 @@ const anotherData = [
     code_link: "https://github.com/Alan-day/crypto-tracker",
   },
   {
-    project_picture: `${ticket}`,
-    title: "REACT/JAVA",
+    project_picture: `${spending}`,
+    title: "REACT / Spring / MySQL",
     header: "Expense tracker",
     description:
       "Full stack application for adding expenses and tracking spending",
     code_link: "https://github.com/Alan-day/spending-tracker",
+    back_end_link: "https://github.com/Alan-day/spending-tracker--back-end",
   },
   {
-    project_picture: `${ticket}`,
+    project_picture: `${carPark}`,
     title: "JAVA",
     header: "Car park",
     description:

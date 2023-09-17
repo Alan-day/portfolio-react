@@ -81,3 +81,7 @@ $button-colour: white;
     align-self: flex-start;
   }
 }
+
+.card-container :hover {
+  background-color: rgb(204, 223, 230);
+}
