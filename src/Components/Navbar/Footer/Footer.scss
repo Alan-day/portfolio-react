@@ -1,6 +1,24 @@
 .footer {
-  flex-direction: column-reverse;
-  justify-content: space-around;
-  height: 250px;
+  width: 100vw;
+  margin-top: 50px;
   width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__element1 {
+    font-size: 16px;
+  }
+
+  &__element2 {
+    height: 3vh;
+  }
 }
