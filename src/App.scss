@@ -168,20 +168,31 @@ $button-colour: white;
 
 @media screen and (min-width: 826px) {
   .intro {
+    max-height: 800px;
+    background-color: rgb(14, 101, 231);
     margin: 10px 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
     &__name {
       font-size: 32px;
     }
+
     &__position {
       font-size: 30px;
     }
     &__picture {
-      display: flex;
-      align-items: end;
       max-width: 400px;
+      max-height: 600px;
+      display: flex;
+      align-self: flex-end;
+    }
+
+    &__container {
+      padding: 30px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-items: center;
     }
   }
   .App {

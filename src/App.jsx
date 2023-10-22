@@ -1,7 +1,7 @@
 import "./App.scss";
 
 import computer_lad from "./Resources/images/computer_lad.svg";
-import alan from "./Resources/images/alan_picture.jpg";
+import alan from "./Resources/images/alan_picture11.png";
 import html from "./Resources/images/Vector(5).svg";
 import css from "./Resources/images/Vector.svg";
 import js from "./Resources/images/Vector(9).svg";
@@ -23,17 +23,17 @@ function App() {
       <Navbar />
       <div class="intro">
         <div class="intro__container">
-          <h2 class=" intro__name">&#128075; Hey! I'm Alan </h2>
+          <h2 class=" intro__name"> Hey! I'm Alan </h2>
           <h3 class="intro__position">
             A Junior Software Developer based in Berkshire.
           </h3>
         </div>
 
-        <img class="intro__picture" src={computer_lad} id="about" />
+        <img class="intro__picture" src={alan} id="about" />
       </div>
 
       <div class="about__container">
-        <img class="about__container__face" src={alan} />
+        <img class="about__container__face" src={computer_lad} />
 
         <h2 class="about__container__header">About Me</h2>
         <p class="about__container__paragraph1">
