@@ -18,6 +18,7 @@ $button-colour: white;
     padding: 5px;
     font-family: $primary-font;
     display: flex;
+    justify-content: center;
     justify-content: space-between;
 
     &__username {
@@ -28,6 +29,7 @@ $button-colour: white;
     }
 
     &__list--element {
+      font-family: "Montserrat";
       margin: 0;
       font-weight: bold;
       font-size: 16px;
@@ -37,18 +39,28 @@ $button-colour: white;
     }
 
     &__list--button {
-      font-family: $secondary-font;
-      font-size: 12px;
+      font-family: "Montserrat";
+
+      font-size: 16px;
       font-weight: bold;
-      border: 1px solid;
-      border-radius: 5px;
-      padding: 7px 12px;
+      border-radius: 10px;
+      height: 15px;
       text-decoration: none;
       display: inline;
     }
 
+    &__list__icon {
+      height: 15px;
+      border-radius: 10px;
+    }
+
     a {
       text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      color: rgb(179, 1, 1);
     }
   }
 }

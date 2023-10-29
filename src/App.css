@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 825px) {
+  .App {
+    margin: 20px;
+    height: 100vh;
+  }
+  .App a {
+    text-decoration: none;
+    color: red;
+  }
+  .about__container {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__container__face {
+    border-radius: 50px;
+    width: 240px;
+    height: 350px;
+  }
+  .about__container__header {
+    padding-top: 25px;
+  }
+  .intro__picture {
+    display: none;
+  }
+  .intro__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .intro__name {
+    font-family: "Mooli", sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  .intro__position {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .skills__container {
+    margin: 20px;
+  }
+  .skills__container--header {
+    font-family: "Open Sans", "Arial";
+  }
+  .skills-list {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "picture1 picture2 picture3 " "text1 text2 text3 " "picture4 picture5 picture6 " "text4 text5 text6 " "picture7 picture8 picture9" "text7 text8 text9";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 100px 1fr 100px 1fr 100px;
+    justify-items: center;
+    /*----------------------------------------------------*/
+  }
+  .skills-list--picture1 {
+    grid-area: picture1;
+    padding: 5px;
+  }
+  .skills-list--picture2 {
+    grid-area: picture2;
+    padding: 5px;
+  }
+  .skills-list--picture3 {
+    grid-area: picture3;
+    padding: 5px;
+  }
+  .skills-list--picture4 {
+    grid-area: picture4;
+    padding: 5px;
+  }
+  .skills-list--picture5 {
+    grid-area: picture5;
+    padding: 5px;
+  }
+  .skills-list--picture6 {
+    grid-area: picture6;
+    padding: 5px;
+  }
+  .skills-list--picture7 {
+    grid-area: picture7;
+    padding: 5px;
+  }
+  .skills-list--picture8 {
+    grid-area: picture8;
+    padding: 5px;
+  }
+  .skills-list--picture9 {
+    grid-area: picture9;
+    padding: 5px;
+  }
+  .skills-list--item1 {
+    grid-area: text1;
+    align-self: self-start;
+  }
+  .skills-list--item2 {
+    grid-area: text2;
+    align-self: self-start;
+  }
+  .skills-list--item3 {
+    grid-area: text3;
+    align-self: self-start;
+  }
+  .skills-list--item4 {
+    align-self: self-start;
+    grid-area: text4;
+  }
+  .skills-list--item5 {
+    align-self: self-start;
+    grid-area: text5;
+  }
+  .skills-list--item6 {
+    align-self: self-start;
+    grid-area: text6;
+  }
+  .skills-list--item7 {
+    align-self: self-start;
+    grid-area: text7;
+  }
+  .skills-list--item8 {
+    align-self: self-start;
+    grid-area: text8;
+  }
+  .skills-list--item9 {
+    align-self: self-start;
+    grid-area: text9;
+  }
+  .skills__list--picture,
+  .skills__list--item {
+    width: 100%;
+    text-align: center;
+  }
+  .research__image {
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    max-height: 100%;
+    width: auto;
+  }
+  .research__header {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 826px) {
+  .intro {
+    max-height: 800px;
+    display: grid;
+    grid-template-rows: 60px 500px;
+    grid-template-areas: " top " " bottom ";
+    width: 100%;
+  }
+  .intro__navbar {
+    grid-area: top;
+  }
+  .intro__container {
+    grid-area: bottom;
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .intro__container--element {
+    padding-left: 40px;
+    display: flex;
+    align-self: center;
+    height: 150px;
+  }
+  .intro__name {
+    padding-left: 50px;
+    display: flex;
+    align-self: center;
+    font-family: "Mooli", sans-serif;
+    font-size: 32px;
+  }
+  .intro__position {
+    font-size: 30px;
+  }
+  .intro__picture {
+    max-width: 400px;
+    max-height: 600px;
+    display: flex;
+    align-self: flex-end;
+  }
+  .App {
+    height: 100vh;
+  }
+  .about__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-areas: "heading heading" "picture paragraph1" "picture paragraph2";
+  }
+  .about__container__face {
+    padding-right: 50px;
+    justify-self: center;
+    align-self: flex-end;
+    grid-area: picture;
+    padding-left: 20px;
+    border-radius: 10px;
+    height: 400px;
+  }
+  .about__container__paragraph1 {
+    grid-area: paragraph1;
+    font-family: "Open Sans", "Arial";
+    align-self: self-end;
+  }
+  .about__container__paragraph2 {
+    grid-area: paragraph2;
+    font-family: "Open Sans", "Arial";
+  }
+  .about__container__header {
+    grid-area: heading;
+    align-self: center;
+    justify-self: center;
+    font-family: "Montserrat", "sans serif";
+    font-size: 32px;
+    align-self: flex-end;
+  }
+  .skills__container {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .skills__container--header {
+    font-family: "Open Sans", "Arial";
+  }
+  .skills-list {
+    margin-top: 50px;
+    justify-self: center;
+    width: 100%;
+    padding: 0 1vh;
+    display: grid;
+    grid-template-areas: "picture1 picture2 picture3 picture4 picture5 picture6 picture7 picture8 picture9" "text1 text2 text3 text4 text5 text6 text7 text8 text9";
+    font-family: "Open Sans", "Arial";
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+  }
+  .research__image {
+    margin: 50px 20px;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    max-height: 100%;
+    width: auto;
+  }
+  .research__header {
+    display: flex;
+    justify-content: center;
+  }
+  .research__paragraph {
+    margin: 0px 10vw;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .about__container {
+    margin: 0px 10vw;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas: "smth heading" "picture paragraph1" "picture paragraph2";
+  }
+  .about__container__face {
+    justify-self: center;
+    align-self: flex-end;
+    grid-area: picture;
+    padding-left: 20px;
+    max-width: 450px;
+    height: auto;
+  }
+  .about__container__paragraph1 {
+    grid-area: paragraph1;
+    font-family: "Open Sans", "Arial";
+    align-self: center;
+  }
+  .about__container__paragraph2 {
+    grid-area: paragraph2;
+    font-family: "Open Sans", "Arial";
+  }
+  .about__container__header {
+    padding-right: 10vw;
+    grid-area: heading;
+    align-self: flex-end;
+    justify-self: center;
+    font-family: "Montserrat", "sans serif";
+    font-size: 40px;
+  }
+  .skills__container {
+    margin: 40px 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .skills__container--header {
+    font-family: "Open Sans", "Arial";
+  }
+  .skills__container--paragraph {
+    font-size: 20px;
+  }
+  .skills-list {
+    width: 80vw;
+  }
+}/*# sourceMappingURL=App.css.map */

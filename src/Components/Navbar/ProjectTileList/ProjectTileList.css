@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@500&display=swap");
+@media screen and (min-width: 826px) {
+  .project-header {
+    font-family: "Open Sans", "Arial";
+    font-weight: 600;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}/*# sourceMappingURL=ProjectTileList.css.map */

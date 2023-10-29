@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-
+import likedin from "../../../Resources/images/LinkedIn_icon.svg";
 const Navbar = () => {
   return (
     <>
@@ -21,7 +21,7 @@ const Navbar = () => {
           </li>
           <li class="navbar navbar__list--button">
             <a href="https://www.linkedin.com/in/alan-szafarczyk-06996b165/">
-              Get in touch
+              Contact
             </a>
           </li>
         </ul>

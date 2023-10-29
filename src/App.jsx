@@ -12,7 +12,8 @@ import java from "./Resources/images/Vector(4).svg";
 import bem from "./Resources/images/Vector(8).svg";
 import sass from "./Resources/images/Vector(10).svg";
 import iot from "./Resources/images/iot-devices_cover.webp";
-
+import code from "./Resources/images/code.png";
+// import coding from "./Resources/images/coding.gif";
 import ProjectTileList from "./Components/Navbar/ProjectTileList/ProjectTileList";
 import Navbar from "./Components/Navbar/Navbar/Navbar";
 import Footer from "./Components/Navbar/Footer/Footer";
@@ -20,16 +21,17 @@ import Footer from "./Components/Navbar/Footer/Footer";
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <div class="intro">
-        <div class="intro__container">
-          <h2 class=" intro__name"> Hey! I'm Alan </h2>
-          <h3 class="intro__position">
-            A Junior Software Developer based in Berkshire.
-          </h3>
+        <div className="intro-navbar">
+          <Navbar />
         </div>
-
-        <img class="intro__picture" src={alan} id="about" />
+        <div class="intro__container">
+          <img class="intro__container--element" src={code} />
+          <h2 class=" intro__name">
+            Hey! I'm Alan <br /> A Junior Software Developer based in Berkshire.
+          </h2>
+          <img class="intro__picture" src={alan} id="about" />
+        </div>
       </div>
 
       <div class="about__container">
