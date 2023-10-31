@@ -1,7 +1,7 @@
 import "./App.scss";
 
 import computer_lad from "./Resources/images/computer_lad.svg";
-import alan from "./Resources/images/alan_picture11.png";
+import alan from "./Resources/images/alan_picture_frame.png";
 import html from "./Resources/images/Vector(5).svg";
 import css from "./Resources/images/Vector.svg";
 import js from "./Resources/images/Vector(9).svg";

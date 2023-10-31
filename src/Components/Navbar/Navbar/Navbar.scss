@@ -25,6 +25,7 @@ $button-colour: white;
       font-family: $secondary-font;
       padding-left: 90px;
       font-weight: bold;
+      text-decoration: none;
       font-size: 14px;
     }
 
@@ -34,7 +35,7 @@ $button-colour: white;
       font-weight: bold;
       font-size: 16px;
       padding: 10px;
-
+      text-decoration: none;
       display: inline;
     }
 
@@ -47,11 +48,6 @@ $button-colour: white;
       height: 15px;
       text-decoration: none;
       display: inline;
-    }
-
-    &__list__icon {
-      height: 15px;
-      border-radius: 10px;
     }
 
     a {
