@@ -1,7 +1,7 @@
 import "./App.scss";
-
+import { useSpring, animated } from "react-spring";
 import computer_lad from "./Resources/images/computer_lad.svg";
-import alan from "./Resources/images/alan_picture_frame.png";
+import alan from "./Resources/images/alan_picture12.png";
 import html from "./Resources/images/Vector(5).svg";
 import css from "./Resources/images/Vector.svg";
 import js from "./Resources/images/Vector(9).svg";
@@ -18,6 +18,7 @@ import background from "./Resources/images/wickedbackground.png";
 import ProjectTileList from "./Components/Navbar/ProjectTileList/ProjectTileList";
 import Navbar from "./Components/Navbar/Navbar/Navbar";
 import Footer from "./Components/Navbar/Footer/Footer";
+import FloatingText from "./Components/FloatingText/FloatingText";
 
 function App() {
   return (
@@ -28,11 +29,11 @@ function App() {
           <Navbar />
         </div>
         <div class="intro__container">
-          <img class="intro__container--element" src={code} />
+          {/* <img class="intro__container--element" src={code} /> */}
           <h2 class=" intro__name">
-            Hey! I'm Alan <br /> - Junior Software Developer based in Berkshire.
+            <FloatingText />
           </h2>
-          <img class="intro__picture" src={alan} id="about" />
+          {/* <img class="intro__picture" src={alan} id="about" /> */}
         </div>
       </div>
 

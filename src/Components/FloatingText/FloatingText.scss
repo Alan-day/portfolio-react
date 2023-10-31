@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+// @import url(./Resources/images/wickedbackground.png);
+
+$title-font: "Mooli", sans-serif;
+.floating {
+  display: flex;
+
+  &__name {
+    padding-left: 50px;
+    display: flex;
+    align-self: center;
+    font-family: $title-font;
+    font-size: 32px;
+  }
+
+  &__picture {
+    max-width: 400px;
+    max-height: 600px;
+    display: flex;
+    align-self: flex-end;
+  }
+}
