@@ -1,7 +1,9 @@
 import "./App.scss";
-import { useSpring, animated } from "react-spring";
+
 import computer_lad from "./Resources/images/computer_lad.svg";
-import alan from "./Resources/images/alan_picture12.png";
+import footerPicture from "./Resources/images/footer-image.jpg";
+import cSharp from "./Resources/images/C_Sharp_Icon.png";
+import sql from "./Resources/images/Sql_data_base_with_logo.png";
 import html from "./Resources/images/Vector(5).svg";
 import css from "./Resources/images/Vector.svg";
 import js from "./Resources/images/Vector(9).svg";
@@ -12,9 +14,9 @@ import java from "./Resources/images/Vector(4).svg";
 import bem from "./Resources/images/Vector(8).svg";
 import sass from "./Resources/images/Vector(10).svg";
 import iot from "./Resources/images/iot-devices_cover.webp";
-import code from "./Resources/images/code.png";
+
 import background from "./Resources/images/wickedbackground3-reshaped900.png";
-// import coding from "./Resources/images/coding.gif";
+
 import ProjectTileList from "./Components/Navbar/ProjectTileList/ProjectTileList";
 import Navbar from "./Components/Navbar/Navbar/Navbar";
 import Footer from "./Components/Navbar/Footer/Footer";
@@ -61,7 +63,7 @@ function App() {
 
       <div class="skills__container">
         <h1 class="skills__container--header">Technical skills</h1>
-        <p class="skills__container--paragraph">
+        {/* <p class="skills__container--paragraph">
           As a junior developer who recently completed a bootcamp, where I have
           gained proficiency in several technical skills. Now I have some
           experience with Java, Spring Boot, React, JavaScript, Git, BEM, HTML,
@@ -73,10 +75,12 @@ function App() {
           understanding full stack development concepts. Overall, I am
           well-prepared to contribute to web development projects with my
           diverse skill set.
-        </p>
+        </p> */}
       </div>
 
       <div class="skills-list">
+        {/* <img class="skills-list--picture0" src={cSharp} />
+        <img class="skills-list--picture00" src={sql} /> */}
         <img class="skills-list--picture1" src={html} />
         <img class="skills-list--picture2" src={css} />
         <img class="skills-list--picture3" src={js} />
@@ -87,6 +91,8 @@ function App() {
         <img class="skills-list--picture8" src={bem} />
         <img class="skills-list--picture9" src={sass} />
 
+        {/* <p class="skills-list--item0">C#</p>
+        <p class="skills-list--item00">SQL</p> */}
         <p class="skills-list--item1">HTML5</p>
         <p class="skills-list--item2">CSS3</p>
         <p class="skills-list--item3">Javascript</p>
@@ -174,6 +180,8 @@ function App() {
           robust framework that effectively safeguards the rapidly expanding IoT
           ecosystem.
         </p>
+
+        {/* <img src={footerPicture} className="research__footer" /> */}
       </section>
 
       <Footer />

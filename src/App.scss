@@ -80,6 +80,7 @@ $button-colour: white;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 100px 1fr 100px 1fr 100px;
     justify-items: center;
+
     &--picture1 {
       grid-area: picture1;
       padding: 5px;
@@ -117,6 +118,14 @@ $button-colour: white;
       padding: 5px;
     }
     /*----------------------------------------------------*/
+    &--item0 {
+      grid-area: text0;
+      align-self: self-start;
+    }
+    &--item00 {
+      grid-area: text00;
+      align-self: self-start;
+    }
     &--item1 {
       grid-area: text1;
       align-self: self-start;
@@ -181,10 +190,7 @@ $button-colour: white;
   .intro {
     position: relative;
     overflow: hidden;
-    // background-image: url("../Resources/images/wickedbackground.png");
-    // background-size: cover;
     height: 700px;
-    // background-color: rgb(14, 101, 231);
     display: grid;
     grid-template-rows: 60px 500px;
     grid-template-areas:
@@ -282,7 +288,7 @@ $button-colour: white;
     }
   }
   .skills__container {
-    margin: 0px 20px;
+    margin: 0px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,20 +298,33 @@ $button-colour: white;
     }
   }
   .skills-list {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
     margin-top: 50px;
-
     justify-self: center;
     width: 100%;
     padding: 0 1vh;
     display: grid;
     grid-template-areas:
-      "picture1 picture2 picture3 picture4 picture5 picture6 picture7 picture8 picture9"
+      " picture1 picture2 picture3 picture4 picture5 picture6 picture7 picture8 picture9"
       "text1 text2 text3 text4 text5 text6 text7 text8 text9";
     font-family: $secondary-font;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 1fr 1fr;
-    align-content: center;
+    align-items: center;
     justify-items: center;
+
+    &__background {
+      opacity: 0.2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
   }
 
   .research {
@@ -328,6 +347,11 @@ $button-colour: white;
       display: flex;
       align-items: center;
     }
+
+    // &__footer {
+    //   max-height: 50vh;
+    //   width: 100vw;
+    // }
   }
 }
 
@@ -389,7 +413,7 @@ $button-colour: white;
   }
 
   .skills__container {
-    margin: 40px 10vw;
+    margin: 100px 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;

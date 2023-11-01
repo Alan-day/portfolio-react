@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-import likedin from "../../../Resources/images/LinkedIn_icon.svg";
+
 const Navbar = () => {
   return (
     <>
