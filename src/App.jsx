@@ -13,7 +13,7 @@ import bem from "./Resources/images/Vector(8).svg";
 import sass from "./Resources/images/Vector(10).svg";
 import iot from "./Resources/images/iot-devices_cover.webp";
 import code from "./Resources/images/code.png";
-import background from "./Resources/images/wickedbackground.png";
+import background from "./Resources/images/wickedbackground3-reshaped900.png";
 // import coding from "./Resources/images/coding.gif";
 import ProjectTileList from "./Components/Navbar/ProjectTileList/ProjectTileList";
 import Navbar from "./Components/Navbar/Navbar/Navbar";
