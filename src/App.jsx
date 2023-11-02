@@ -18,7 +18,7 @@ import iot from "./Resources/images/iot-devices_cover.webp";
 import background from "./Resources/images/wickedbackground3-reshaped900.png";
 
 import ProjectTileList from "./Components/Navbar/ProjectTileList/ProjectTileList";
-import Navbar from "./Components/Navbar/Navbar/Navbar";
+import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Navbar/Footer/Footer";
 import FloatingText from "./Components/FloatingText/FloatingText";
 

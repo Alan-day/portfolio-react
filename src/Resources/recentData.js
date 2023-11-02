@@ -1,6 +1,5 @@
-import morse from "./images/morse_code_translator.png";
 import game from "./images/card_game.jpg";
-import cert from "./images/cSharp_learning.png";
+import cert from "./images/cert.png";
 import blog from "./images/Purpose-of-Blogging.jpeg";
 
 const recentData = [
