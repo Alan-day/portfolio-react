@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.scss";
-import images from "./../../../Resources/images/Icons.svg";
+
 const Footer = () => {
   return (
     <footer className="footer">

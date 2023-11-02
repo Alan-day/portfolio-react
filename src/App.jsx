@@ -17,9 +17,9 @@ import iot from "./Resources/images/iot-devices_cover.webp";
 
 import background from "./Resources/images/wickedbackground3-reshaped900.png";
 
-import ProjectTileList from "./Components/Navbar/ProjectTileList/ProjectTileList";
+import ProjectTileList from "./Components/ProjectTileList/ProjectTileList";
 import Navbar from "./Components/Navbar/Navbar";
-import Footer from "./Components/Navbar/Footer/Footer";
+import Footer from "./Components/Footer/Footer";
 import FloatingText from "./Components/FloatingText/FloatingText";
 
 function App() {

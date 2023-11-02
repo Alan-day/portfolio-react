@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProjectTile.scss";
-import code_sign from "./../../../Resources/images/Vector(11).svg";
+import code_sign from "./../../Resources/images/Vector(11).svg";
 const ProjectTile = ({
   title,
   header,

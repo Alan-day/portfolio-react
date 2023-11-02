@@ -1,9 +1,8 @@
 import React from "react";
 import "./ProjectTileList.scss";
-import anotherData from "./../../../Resources/anotherData.js";
-import recentData from "../../../Resources/recentData";
+import anotherData from "./../../Resources/anotherData.js";
+import recentData from "../../Resources/recentData";
 import ProjectTile from "../ProjectTile/ProjectTile";
-import projectsBackground from "../../../Resources/images/triangle_pic.jpg";
 
 const ProjectTileList = () => {
   const tiles = anotherData.map((element) => {
@@ -37,7 +36,7 @@ const ProjectTileList = () => {
   return (
     <>
       <h1 className="project-header" id="projects">
-        My most recent projects...
+        What I've been up to...
       </h1>
       <div className="project-list">
         {recentTiles}
