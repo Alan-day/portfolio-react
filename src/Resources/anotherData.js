@@ -1,5 +1,5 @@
 import morse from "./images/morse_code_translator.png";
-import tic from "./images/tic-tac-toe-wood.jpg";
+import tic from "./images/Tic-Tac-Toe-Product.jpg";
 import beer from "./images/punk_api.png";
 import drinkVoyage from "./images/drink-voyage.png";
 import weather from "./images/weather-app.png";

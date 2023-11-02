@@ -29,6 +29,7 @@ const ProjectTileList = () => {
         code_link={element.code_link}
         preview_link={element.preview_link}
         back_end_link={element.back_end_link}
+        view={element.view}
       />
     );
   });
@@ -36,7 +37,7 @@ const ProjectTileList = () => {
   return (
     <>
       <h1 className="project-header" id="projects">
-        What I've been up to...
+        Most recent projects
       </h1>
       <div className="project-list">
         {recentTiles}

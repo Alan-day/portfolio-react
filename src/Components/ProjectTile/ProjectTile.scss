@@ -2,7 +2,7 @@
 
 $primary-font: "Montserrat", "sans serif";
 $secondary-font: "Open Sans", "Arial";
-$button-colour: white;
+$button-colour: rgb(255, 255, 255);
 
 .card {
   padding: 5px;
@@ -11,9 +11,34 @@ $button-colour: white;
   display: flex;
   flex-direction: column;
   align-self: center;
+  align-items: center;
+
+  &__preview {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    height: 12rem;
+
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  &__description {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 100%;
+    background-color: rgb(255, 68, 0);
+    height: 4rem;
+  }
 
   &__header1 {
-    font-size: 36px;
+    font-family: $primary-font;
+    font-size: 24px;
     display: flex;
     grid-area: title;
     align-self: center;
@@ -22,7 +47,7 @@ $button-colour: white;
   &__buttons--element1 {
     display: flex;
     align-items: center;
-    border: 1px solid;
+    border: none;
     margin-top: 10px;
     margin-right: 5px;
     border-radius: 5px;
@@ -32,12 +57,14 @@ $button-colour: white;
     font-family: $secondary-font;
     padding: 7px 15px;
     background-color: $button-colour;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
 
   &__buttons--element2 {
+    box-shadow: 0 4px 6px rgba(15, 15, 15, 0.2);
     display: flex;
     align-items: center;
-    border: 1px solid;
+    border: none;
     margin-top: 10px;
     margin-right: 5px;
     border-radius: 5px;
@@ -48,40 +75,50 @@ $button-colour: white;
     padding: 7px 15px;
     background-color: $button-colour;
   }
+
   &__buttons {
     display: flex;
-    flex-direction: row;
   }
 
   &__img {
-    height: auto;
+    margin-top: 10px;
+    height: 10rem;
     width: auto;
     max-height: 300px;
     max-width: 100%;
     margin-bottom: 10px;
-    align-self: self-start;
+    align-self: center;
   }
 
-  &__title {
-    margin: 10px 0px;
-    align-self: start;
-    justify-self: start;
-  }
-  &__header1 {
-    align-self: flex-start;
-    justify-self: start;
-  }
-  &__header2 {
-    align-self: start;
-    justify-self: start;
-    font-size: 14px;
-  }
-  &__paragraph {
-    padding: 10px 0px;
-    align-self: flex-start;
-  }
+  // &__title {
+  //   margin: 10px 0px;
+  //   align-self: start;
+  //   justify-self: start;
+  // }
+  // &__header1 {
+  //   align-self: flex-start;
+  //   justify-self: start;
+  // }
+  // &__header2 {
+  //   align-self: start;
+  //   justify-self: start;
+  //   font-size: 14px;
+  // }
+  // &__paragraph {
+  //   padding: 10px 0px;
+  //   align-self: flex-start;
+  // }
 }
 
+.code-icon {
+  margin-top: 2px;
+  margin-left: 2px;
+  display: flex;
+  align-self: center;
+}
+a {
+  text-decoration: none;
+}
 .card-container :hover {
   background-color: rgb(204, 223, 230);
 }

@@ -16,6 +16,9 @@ const recentData = [
     project_picture: `${cert}`,
     title: "C#",
     header: "C# Fundamentals",
+    view:
+      "https://www.freecodecamp.org/certification/alanowski/foundational-c-sharp-with-microsoft",
+
     description:
       "I'm currently pursuing Microsoft C# Fundamentals certification (hosted by FreeCodeCamp) to demonstrate my proficiency in that language.",
   },
