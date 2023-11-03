@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProjectTile.scss";
 import code_sign from "./../../Resources/images/Vector(11).svg";
+import project_background from "./../../Resources/images/project-background.jpg";
 const ProjectTile = ({
   title,
   header,
@@ -14,6 +15,10 @@ const ProjectTile = ({
   return (
     <>
       <div className="card">
+        <div className="card__top">
+          {/* <img class="card__top--image" src={project_background} /> */}
+        </div>
+
         <div className="card__preview">
           <img className="card__img" src={project_picture} />
         </div>
@@ -24,7 +29,7 @@ const ProjectTile = ({
         <div className="card__description">
           <h1 className="card__header1">{header}</h1>
 
-          {/* <p className="card__paragraph">{description}</p> */}
+          <p className="card__description--cover">{description}</p>
         </div>
 
         <div className="card__buttons">
