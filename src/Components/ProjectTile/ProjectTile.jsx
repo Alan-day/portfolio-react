@@ -17,12 +17,16 @@ const ProjectTile = ({
         <div className="card__preview">
           <img className="card__img" src={project_picture} />
         </div>
+        <div className="card__language">
+          <p className="card__title">{title}</p>
+        </div>
 
         <div className="card__description">
-          {/* <p className="card__title">{title}</p> */}
           <h1 className="card__header1">{header}</h1>
+
           {/* <p className="card__paragraph">{description}</p> */}
         </div>
+
         <div className="card__buttons">
           {view && (
             <button className="card__buttons--element1">

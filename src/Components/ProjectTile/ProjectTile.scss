@@ -22,12 +22,20 @@ $button-colour: rgb(255, 255, 255);
     align-items: center;
     height: 12rem;
     width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.3);
+  }
+  &__language {
+    font-family: $primary-font;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
   }
 
   &__description {
     margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     width: 100%;
