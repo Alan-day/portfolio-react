@@ -53,11 +53,7 @@ const ProjectTileList = () => {
       </div>
       <div className="project-list">
         {tiles}
-        {/* <img
-          src={projectsBackground}
-          alt="picture"
-          className="project-list__background"
-        /> */}
+   
       </div>
     </>
   );
