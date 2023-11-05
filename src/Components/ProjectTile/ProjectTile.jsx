@@ -27,10 +27,9 @@ const ProjectTile = ({
         </div>
 
         <div className="card__description">
-          <h1 className="card__header1">{header}</h1>
-
-          <p className="card__description--cover">{description}</p>
+          <div class="text">{description}</div>
         </div>
+        <div className="card__header1">{header}</div>
 
         <div className="card__buttons">
           {view && (
