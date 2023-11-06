@@ -51,7 +51,7 @@ function App() {
       <Skills />
       <ProjectTileList />
 
-      <section class="research" id="research">
+      <div class="research" id="research">
         <h1 class="research__header">Research on IoT vulnerabilities</h1>
 
         <p class="research__paragraph">
@@ -127,7 +127,7 @@ function App() {
         </p>
 
         {/* <img src={footerPicture} className="research__footer" /> */}
-      </section>
+      </div>
 
       <Footer />
     </div>

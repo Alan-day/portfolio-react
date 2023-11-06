@@ -11,6 +11,9 @@ $button-colour: white;
   .skills__container {
     width: 100vw;
     margin: 20px;
+    &--paragraph {
+      font-family: $secondary-font;
+    }
     &--header {
       font-size: 20px;
       font-family: $secondary-font;
@@ -21,7 +24,7 @@ $button-colour: white;
 
   .skills-list {
     display: grid;
-    width: 100vw;
+
     grid-template-areas:
       "picture1 picture2 picture3"
       "text1 text2 text3"
