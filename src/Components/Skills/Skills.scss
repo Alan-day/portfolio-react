@@ -13,6 +13,8 @@ $button-colour: white;
     margin: 20px;
     &--header {
       font-family: $secondary-font;
+      display: flex;
+      justify-content: space-around;
     }
   }
 
@@ -30,7 +32,7 @@ $button-colour: white;
     // "text10 text11";
 
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 100px 1fr 100px 1fr 100px 1fr 100px;
+    grid-template-rows: 1fr 100px 1fr 100px 1fr 100px;
     justify-items: center;
 
     &--picture1 {
@@ -70,11 +72,13 @@ $button-colour: white;
       padding: 5px;
     }
     &--picture10 {
+      display: none;
       width: 50px;
       grid-area: picture10;
       padding: 5px;
     }
     &--picture11 {
+      display: none;
       width: 50px;
       grid-area: picture11;
       padding: 5px;
@@ -118,10 +122,12 @@ $button-colour: white;
       grid-area: text9;
     }
     &--item10 {
+      display: none;
       align-self: self-start;
       grid-area: text10;
     }
     &--item11 {
+      display: none;
       align-self: self-start;
       grid-area: text11;
     }
