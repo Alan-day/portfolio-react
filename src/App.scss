@@ -16,6 +16,7 @@ $button-colour: white;
       text-decoration: none;
       color: black;
     }
+
     margin: 20px;
     display: grid;
     grid-template-rows: 1fr;
@@ -39,6 +40,9 @@ $button-colour: white;
   }
 
   .intro {
+    &__background {
+      width: 100%;
+    }
     &__picture {
       display: none;
     }
@@ -57,117 +61,6 @@ $button-colour: white;
       justify-content: center;
       margin-bottom: 40px;
     }
-  }
-
-  .skills__container {
-    margin: 20px;
-    &--header {
-      font-family: $secondary-font;
-    }
-  }
-
-  .skills-list {
-    display: grid;
-    width: 100%;
-    grid-template-areas:
-      "picture1 picture2 picture3 "
-      "text1 text2 text3 "
-      "picture4 picture5 picture6 "
-      "text4 text5 text6 "
-      "picture7 picture8 picture9"
-      "text7 text8 text9"
-      ;
-
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 100px 1fr 100px 1fr 100px;
-    justify-items: center;
-
-    &--picture1 {
-      grid-area: picture1;
-      padding: 5px;
-    }
-    &--picture2 {
-      grid-area: picture2;
-      padding: 5px;
-    }
-    &--picture3 {
-      grid-area: picture3;
-      padding: 5px;
-    }
-    &--picture4 {
-      grid-area: picture4;
-      padding: 5px;
-    }
-    &--picture5 {
-      grid-area: picture5;
-      padding: 5px;
-    }
-    &--picture6 {
-      grid-area: picture6;
-      padding: 5px;
-    }
-    &--picture7 {
-      grid-area: picture7;
-      padding: 5px;
-    }
-    &--picture8 {
-      grid-area: picture8;
-      padding: 5px;
-    }
-    &--picture9 {
-      grid-area: picture9;
-      padding: 5px;
-    }
-    /*----------------------------------------------------*/
-    &--item0 {
-      grid-area: text0;
-      align-self: self-start;
-    }
-    &--item00 {
-      grid-area: text00;
-      align-self: self-start;
-    }
-    &--item1 {
-      grid-area: text1;
-      align-self: self-start;
-    }
-    &--item2 {
-      grid-area: text2;
-      align-self: self-start;
-    }
-    &--item3 {
-      grid-area: text3;
-      align-self: self-start;
-    }
-    &--item4 {
-      align-self: self-start;
-      grid-area: text4;
-    }
-    &--item5 {
-      align-self: self-start;
-      grid-area: text5;
-    }
-    &--item6 {
-      align-self: self-start;
-      grid-area: text6;
-    }
-    &--item7 {
-      align-self: self-start;
-      grid-area: text7;
-    }
-    &--item8 {
-      align-self: self-start;
-      grid-area: text8;
-    }
-    &--item9 {
-      align-self: self-start;
-      grid-area: text9;
-    }
-  }
-  .skills__list--picture,
-  .skills__list--item {
-    width: 100%;
-    text-align: center;
   }
 
   .research {
@@ -191,7 +84,7 @@ $button-colour: white;
   .intro {
     position: relative;
     overflow: hidden;
-    height: 700px;
+    height: 500px;
     display: grid;
     grid-template-rows: 60px 500px;
     grid-template-areas:
@@ -216,7 +109,7 @@ $button-colour: white;
       grid-area: bottom;
 
       width: 100%;
-      height: 600px;
+      height: 400px;
       display: flex;
       justify-content: center;
 
@@ -254,29 +147,33 @@ $button-colour: white;
     width: 100vw;
   }
   .about__container {
+    margin: 50px 10vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 100px 300px 100px;
     grid-template-areas:
-      "heading heading"
-      "picture paragraph1"
-      "picture paragraph2";
+      " heading"
+      "paragraph1"
+      "picture"
+      " paragraph2";
     &__face {
       padding-right: 50px;
       justify-self: center;
-      align-self: flex-end;
+      align-self: center;
       grid-area: picture;
       padding-left: 20px;
       border-radius: 10px;
-      height: 400px;
+      height: 300px;
     }
 
     &__paragraph1 {
+      font-size: 16px;
       grid-area: paragraph1;
       font-family: $secondary-font;
       align-self: self-end;
     }
     &__paragraph2 {
+      font-size: 16px;
       grid-area: paragraph2;
       font-family: $secondary-font;
     }
@@ -287,45 +184,6 @@ $button-colour: white;
       font-family: $primary-font;
       font-size: 32px;
       align-self: flex-end;
-    }
-  }
-  .skills__container {
-    margin: 0px 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    &--header {
-      font-family: $secondary-font;
-    }
-  }
-  .skills-list {
-    position: relative;
-    overflow: hidden;
-    height: 200px;
-    margin-top: 50px;
-    justify-self: center;
-    width: 100%;
-    padding: 0 1vh;
-    display: grid;
-    grid-template-areas:
-      " picture1 picture2 picture3 picture4 picture5 picture6 picture7 picture8 picture9"
-      "text1 text2 text3 text4 text5 text6 text7 text8 text9";
-    font-family: $secondary-font;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-
-    &__background {
-      opacity: 0.2;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      z-index: -1;
     }
   }
 
@@ -349,35 +207,12 @@ $button-colour: white;
       display: flex;
       align-items: center;
     }
-
-    // &__footer {
-    //   max-height: 50vh;
-    //   width: 100vw;
-    // }
   }
 }
 
 @media screen and (min-width: 1500px) {
-  // .intro {
-  //   margin: 10px 40px;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   &__name {
-  //     font-size: 32px;
-  //   }
-  //   &__position {
-  //     font-size: 30px;
-  //   }
-  //   &__picture {
-  //     display: flex;
-  //     align-items: end;
-  //     max-width: 600px;
-  //   }
-  // }
-
   .about__container {
-    margin: 0px 10vw;
+    margin: 5vh 10vw;
     font-size: 25px;
     display: grid;
     grid-template-columns: 0.5fr 1fr;
@@ -396,11 +231,13 @@ $button-colour: white;
     }
 
     &__paragraph1 {
+      font-size: 20px;
       grid-area: paragraph1;
       font-family: $secondary-font;
       align-self: center;
     }
     &__paragraph2 {
+      font-size: 20px;
       grid-area: paragraph2;
       font-family: $secondary-font;
     }
@@ -412,36 +249,5 @@ $button-colour: white;
       font-family: $primary-font;
       font-size: 40px;
     }
-  }
-
-  .skills__container {
-    margin: 100px 10vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    &--header {
-      font-family: $secondary-font;
-    }
-    &--paragraph {
-      font-size: 20px;
-    }
-  }
-
-  .skills-list {
-    margin-top: 50px;
-
-    justify-self: center;
-    width: 100%;
-    padding: 0 1vh;
-    display: grid;
-    grid-template-areas:
-      "picture1 picture2 picture3 picture4 picture5 picture6 picture7 picture8 picture9"
-      "text1 text2 text3 text4 text5 text6 text7 text8 text9";
-    font-family: $secondary-font;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 1fr 1fr;
-    align-content: center;
-    justify-items: center;
   }
 }

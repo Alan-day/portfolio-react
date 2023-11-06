@@ -82,7 +82,7 @@ const anotherData = [
   {
     project_picture: `${stock}`,
     title: "REACT",
-    header: "Crypto/Stock prices tracker",
+    header: "Stock prices tracker",
     description:
       "Crypocurrency and stock market tracker. Currently the app doesn't allow for search as I used my API calls allowance and haven't renewed my subscription",
     code_link: "https://github.com/Alan-day/crypto-tracker",

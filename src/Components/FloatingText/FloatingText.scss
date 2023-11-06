@@ -3,21 +3,67 @@
 // @import url(./Resources/images/wickedbackground.png);
 
 $title-font: "Mooli", sans-serif;
-.floating {
-  display: flex;
+$primary-font: "Montserrat", "sans serif";
+$secondary-font: "Open Sans", "Arial";
+$button-colour: white;
 
-  &__name {
-    padding-left: 50px;
+@media screen and (min-width: 1500px) {
+  .floating {
     display: flex;
-    align-self: center;
-    font-family: $title-font;
-    font-size: 32px;
+
+    &__name {
+      padding-left: 50px;
+      display: flex;
+      align-self: center;
+      font-family: $title-font;
+      font-size: 32px;
+    }
+
+    &__picture {
+      max-width: 400px;
+      max-height: 600px;
+      display: flex;
+      align-self: flex-end;
+    }
   }
-
-  &__picture {
-    max-width: 400px;
-    max-height: 600px;
+}
+@media screen and (max-width: 1499px) {
+  .floating {
     display: flex;
-    align-self: flex-end;
+    &__name {
+      padding-left: 50px;
+      display: flex;
+      align-self: center;
+      font-family: $title-font;
+      font-size: 25px;
+    }
+
+    &__picture {
+      margin: 5vw;
+      max-width: 300px;
+      max-height: 500px;
+      display: flex;
+      align-self: flex-start;
+    }
+  }
+}
+@media screen and (max-width: 825px) {
+  .floating {
+    display: flex;
+    &__name {
+      padding-left: 50px;
+      display: flex;
+      align-self: center;
+      font-family: $title-font;
+      font-size: 25px;
+    }
+
+    &__picture {
+      margin: 5vw;
+      max-width: 100px;
+      max-height: 150px;
+      display: flex;
+      align-self: flex-start;
+    }
   }
 }

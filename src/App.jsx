@@ -2,23 +2,14 @@ import "./App.scss";
 
 import computer_lad from "./Resources/images/computer_lad.svg";
 import footerPicture from "./Resources/images/footer-image.jpg";
-import cSharp from "./Resources/images/C_Sharp_Icon.png";
-import sql from "./Resources/images/Sql_data_base_with_logo.png";
-import html from "./Resources/images/Vector(5).svg";
-import css from "./Resources/images/Vector.svg";
-import js from "./Resources/images/Vector(9).svg";
-import git from "./Resources/images/Vector(1).svg";
-import react from "./Resources/images/Vector(2).svg";
-import spring from "./Resources/images/Vector(3).svg";
-import java from "./Resources/images/Vector(4).svg";
-import bem from "./Resources/images/Vector(8).svg";
-import sass from "./Resources/images/Vector(10).svg";
+
 import iot from "./Resources/images/iot-devices_cover.webp";
 import background from "./Resources/images/wickedbackground3-reshaped900.png";
 import ProjectTileList from "./Components/ProjectTileList/ProjectTileList";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import FloatingText from "./Components/FloatingText/FloatingText";
+import Skills from "./Components/Skills/Skills";
 
 function App() {
   return (
@@ -29,11 +20,9 @@ function App() {
           <Navbar />
         </div>
         <div class="intro__container">
-          {/* <img class="intro__container--element" src={code} /> */}
           <h2 class=" intro__name">
             <FloatingText />
           </h2>
-          {/* <img class="intro__picture" src={alan} id="about" /> */}
         </div>
       </div>
 
@@ -59,51 +48,7 @@ function App() {
         </p>
       </div>
 
-      <div class="skills__container">
-        <h1 class="skills__container--header">Technical skills</h1>
-
-        <div class="skills-list">
-          <img class="skills-list--picture0" src={cSharp} />
-          <img class="skills-list--picture00" src={sql} />
-          <img class="skills-list--picture1" src={html} />
-          <img class="skills-list--picture2" src={css} />
-          <img class="skills-list--picture3" src={js} />
-          <img class="skills-list--picture4" src={git} />
-          <img class="skills-list--picture5" src={react} />
-          <img class="skills-list--picture6" src={spring} />
-          <img class="skills-list--picture7" src={java} />
-          <img class="skills-list--picture8" src={bem} />
-          <img class="skills-list--picture9" src={sass} />
-
-          <p class="skills-list--item0">C#</p>
-          <p class="skills-list--item00">SQL</p>
-          <p class="skills-list--item1">HTML5</p>
-          <p class="skills-list--item2">CSS3</p>
-          <p class="skills-list--item3">Javascript</p>
-          <p class="skills-list--item4">Git</p>
-          <p class="skills-list--item5">React</p>
-          <p class="skills-list--item6">Spring Boot</p>
-          <p class="skills-list--item7">Java</p>
-          <p class="skills-list--item8">BEM</p>
-          <p class="skills-list--item9">SASS</p>
-        </div>
-        <div>
-          <p class="skills__container--paragraph">
-            I'm a recent computer science graduate, who's successfully completed
-            a bootcamp where I honed my technical skills. My proficiency now
-            extends to various technologies, such as Java, Spring Boot, React,
-            JavaScript, Git, BEM, HTML, SASS, and CSS. Furthermore, I've wrapped
-            up a full-stack project and currently working on another, in
-            addition to several smaller projects. My skill set encompasses Java
-            programming and testing, React-based UI development, JavaScript, Git
-            version control, adherence to BEM methodology for CSS, HTML
-            structuring, SASS styling, and a comprehensive understanding of
-            full-stack development concepts. After finishing my course, I've
-            ventured into backend development, delving into the application of
-            C# and SQL server.
-          </p>
-        </div>
-      </div>
+      <Skills />
       <ProjectTileList />
 
       <section class="research" id="research">
