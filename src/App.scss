@@ -143,7 +143,7 @@ html,
   .intro {
     position: relative;
     overflow: hidden;
-    height: 500px;
+    height: 400px;
     display: grid;
     grid-template-rows: 60px 500px;
     grid-template-areas:
@@ -156,7 +156,7 @@ html,
       left: 0;
       width: 100vw;
       height: 50vh;
-      object-fit: cover;
+      object-fit: fill;
       z-index: -1;
     }
 
@@ -333,6 +333,19 @@ html,
       margin: 0px 10vw;
       display: flex;
       align-items: center;
+    }
+  }
+
+  .intro {
+    height: 500px;
+    &__background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 500px;
+      object-fit: fill;
+      z-index: -1;
     }
   }
 }

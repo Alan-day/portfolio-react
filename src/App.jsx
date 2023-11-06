@@ -4,7 +4,7 @@ import computer_lad from "./Resources/images/computer_lad.svg";
 import footerPicture from "./Resources/images/footer-image.jpg";
 
 import iot from "./Resources/images/iot-devices_cover.webp";
-import background from "./Resources/images/wickedbackground3-reshaped900.png";
+import background from "./Resources/images/wickedbackground435.png";
 import ProjectTileList from "./Components/ProjectTileList/ProjectTileList";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
