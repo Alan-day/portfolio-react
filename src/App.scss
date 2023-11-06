@@ -75,7 +75,8 @@ $button-colour: white;
       "picture4 picture5 picture6 "
       "text4 text5 text6 "
       "picture7 picture8 picture9"
-      "text7 text8 text9";
+      "text7 text8 text9"
+      ;
 
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 100px 1fr 100px 1fr 100px;
