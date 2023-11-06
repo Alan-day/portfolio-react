@@ -50,18 +50,19 @@ $button-colour: white;
 @media screen and (max-width: 825px) {
   .floating {
     display: flex;
+
     &__name {
       padding-left: 50px;
       display: flex;
       align-self: center;
       font-family: $title-font;
-      font-size: 25px;
+      font-size: 10px;
     }
 
     &__picture {
       margin: 5vw;
-      max-width: 100px;
-      max-height: 150px;
+      max-width: 150px;
+      max-height: 250px;
       display: flex;
       align-self: flex-start;
     }

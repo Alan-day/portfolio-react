@@ -39,22 +39,13 @@ const ProjectTileList = () => {
       <h1 className="project-header" id="projects">
         Most recent projects
       </h1>
-      <div className="project-list">
-        {recentTiles}
-        {/* <img
-          src={projectsBackground}
-          alt="picture"
-          className="project-list__background"
-        /> */}
-      </div>
+      <div className="project-list">{recentTiles}</div>
 
       <div className="project-header">
         <h1>Other projects</h1>
       </div>
-      <div className="project-list">
-        {tiles}
-   
-      </div>
+
+      <div className="project-list">{tiles}</div>
     </>
   );
 };
