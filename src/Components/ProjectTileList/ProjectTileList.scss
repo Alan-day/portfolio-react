@@ -3,40 +3,8 @@
 $primary-font: "Montserrat", "sans serif";
 $secondary-font: "Open Sans", "Arial";
 $button-colour: white;
-@media screen and (min-width: 826px) {
 
-
-  .project-header {
-    font-family: $secondary-font;
-    font-weight: 600;
-    margin: 50px 0px;
-    display: flex;
-    justify-content: center;
-  }
-  .project-list {
-    width: 100vw;
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr;
-    position: relative;
-    overflow: hidden;
-    justify-items: center;
-    align-items: start;
-
-    &__background {
-      opacity: 1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      z-index: -1;
-    }
-  }
-}
-@media screen and (min-width: 826px) {
+@media screen and (min-width: 825px) {
   .project-header {
     font-family: $secondary-font;
     font-weight: 600;

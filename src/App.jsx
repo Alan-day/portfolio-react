@@ -49,8 +49,9 @@ function App() {
       </div>
 
       <Skills />
-      <ProjectTileList />
-
+      <div className="projects-container">
+        <ProjectTileList />
+      </div>
       <div class="research" id="research">
         <h1 class="research__header">Research on IoT vulnerabilities</h1>
 
