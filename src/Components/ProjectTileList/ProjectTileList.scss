@@ -4,7 +4,17 @@ $primary-font: "Montserrat", "sans serif";
 $secondary-font: "Open Sans", "Arial";
 $button-colour: white;
 
+.message {
+  display: flex;
+  align-self: center;
+  color: rgb(2, 36, 226);
+  font-size: 16px;
+}
+
 @media screen and (min-width: 825px) {
+  .message {
+    display: none;
+  }
   .project-header {
     font-family: $secondary-font;
     font-weight: 600;

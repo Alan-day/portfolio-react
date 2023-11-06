@@ -39,6 +39,7 @@ const ProjectTileList = () => {
       <h1 className="project-header" id="projects">
         Most recent projects
       </h1>
+      <h1 className="message">Tap to see the description &#128522;</h1>
       <div className="project-list">{recentTiles}</div>
 
       <div className="project-header">
