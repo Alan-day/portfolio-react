@@ -7,21 +7,28 @@ $primary-font: "Montserrat", "sans serif";
 $secondary-font: "Open Sans", "Arial";
 $button-colour: white;
 
-html,
 .App {
-  width: 100%;
+  width: 100vw;
 }
 * {
   box-sizing: border-box;
 }
 @media screen and (max-width: 825px) {
   .App {
+    transform: scale(100%); /* Adjust the scale factor as needed */
+    transform-origin: top left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s;
+    overflow-y: auto;
+    margin: 0;
     a {
       text-decoration: none;
       color: black;
     }
 
-    margin: 20px;
+    margin: 1vw;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -44,12 +51,14 @@ html,
     }
 
     &__paragraph1 {
+      padding: 0 5vw;
       width: 90%;
       font-size: 16px;
       grid-area: paragraph1;
       font-family: $secondary-font;
     }
     &__paragraph2 {
+      padding: 0 5vw;
       width: 90%;
       font-size: 16px;
       grid-area: paragraph2;
@@ -140,6 +149,10 @@ html,
 }
 
 @media screen and (min-width: 826px) {
+  //---------------------------------------
+  .App {
+    overflow-x: hidden;
+  }
   .intro {
     position: relative;
     overflow: hidden;
@@ -272,6 +285,9 @@ html,
 }
 
 @media screen and (min-width: 1500px) {
+  .App {
+    overflow-x: hidden;
+  }
   .about__container {
     margin: 5vh 10vw;
     font-size: 25px;
@@ -292,12 +308,14 @@ html,
     }
 
     &__paragraph1 {
+      padding: 0 3vw;
       font-size: 20px;
       grid-area: paragraph1;
       font-family: $secondary-font;
       align-self: center;
     }
     &__paragraph2 {
+      padding: 0 3vw;
       font-size: 20px;
       grid-area: paragraph2;
       font-family: $secondary-font;

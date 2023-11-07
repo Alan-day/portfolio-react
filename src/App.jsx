@@ -1,8 +1,6 @@
 import "./App.scss";
 
 import computer_lad from "./Resources/images/computer_lad.svg";
-import footerPicture from "./Resources/images/footer-image.jpg";
-
 import iot from "./Resources/images/iot-devices_cover.webp";
 import background from "./Resources/images/wickedbackground435.png";
 import ProjectTileList from "./Components/ProjectTileList/ProjectTileList";
@@ -49,6 +47,7 @@ function App() {
       </div>
 
       <Skills />
+
       <div className="projects-container">
         <ProjectTileList />
       </div>
@@ -126,8 +125,6 @@ function App() {
           robust framework that effectively safeguards the rapidly expanding IoT
           ecosystem.
         </p>
-
-        {/* <img src={footerPicture} className="research__footer" /> */}
       </div>
 
       <Footer />
