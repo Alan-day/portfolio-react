@@ -16,7 +16,7 @@ const anotherData = [
     title: "JavaScript (Vanilla)",
     header: "Morse Code Translator",
     description:
-      "Project that was part of technical skills review completed within one session.",
+      "Project that was part of technical skills review completed within one 3 hour session.",
     code_link: "https://github.com/Alan-day/morse-code-translator",
     preview_link: "https://alan-day.github.io/morse-code-translator/",
   },
@@ -24,7 +24,7 @@ const anotherData = [
     project_picture: `${tic}`,
     title: "Javascript (Vanilla)",
     header: "Tic-Tac-Toe",
-    description: "My first game that runs in a browser.",
+    description: "My first Javascript game that runs in a browser. ",
     code_link: "https://github.com/Alan-day/tic-tac-toe",
     preview_link: "https://alan-day.github.io/tic-tac-toe/",
   },
@@ -33,7 +33,7 @@ const anotherData = [
     title: "REACT",
     header: "Beer Page",
     description:
-      "A front-end project using open source API (PUNK API) where I applied filter function and sorting based on category.",
+      "More of a applied-what-Ih-have-learned than interesting front-end project using open source API (PUNK API) where I applied filter function and sorting based on category. ",
     code_link: "https://github.com/Alan-day/punk-api",
     preview_link: "https://alan-day.github.io/punk-api/",
   },
@@ -51,7 +51,7 @@ const anotherData = [
     title: "REACT",
     header: "Weather App",
     description:
-      "A front-end project showing current weather based on user location, to-do list that allows for creating/deleting tasks as well as Google Maps feature displaying user location.",
+      "A front-end project showing current weather based on user location, to-do list that allows for creating/deleting tasks as well as Google Maps feature displaying user location. API key expired",
     code_link: "https://github.com/Alan-day/weather-app",
     preview_link: "https://alan-day.github.io/weather-app/",
   },
