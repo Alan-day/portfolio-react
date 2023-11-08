@@ -26,7 +26,7 @@ const recentData = [
     header: "Blog",
     description:
       "Alongside two other projects in this section, I'm developing my own blogging platform which is a full stack application using C# and sql server. Currently alpha version in a different repository",
-    code_link: "https://github.com/Alan-day/blog-application",
+    code_link: "https://github.com/Alan-day/Blog-asp-net-application",
   },
 ];
 
